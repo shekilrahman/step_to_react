@@ -15,7 +15,7 @@ const EditBook = () => {
 
   useEffect( ()=> {
     setLoading(true);
-    axios.get(`http://localhost:5555/books/${id}`)
+    axios.get(`https://react-start-blush.vercel.app/books/${id}`)
     .then((response) => {
         setName(response.data.name);
         setAuthor(response.data.author);
