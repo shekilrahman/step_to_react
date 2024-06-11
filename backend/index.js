@@ -12,7 +12,7 @@ app.use(express.json()); // Middleware to parse JSON bodies
  app.use(
    cors(
     {
-        origin : 'https://step-to-react.vercel.app',
+        origin : ['https://step-to-react.vercel.app'],
          methods : ['GET','POST','PUT','DELETE'],
        allowedHeaders :['Content-Type']
    }
