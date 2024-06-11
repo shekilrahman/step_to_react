@@ -18,7 +18,7 @@ const CreateBook = () => {
       year
     };
     setLoading(true);
-    axios.post(`http://localhost:5555/books`,data)
+    axios.post(`https://react-start-blush.vercel.app/books`,data)
     .then(() => {
         setLoading(false);
         navigate('/');
