@@ -35,7 +35,7 @@ const EditBook = () => {
       year
     };
     setLoading(true);
-    axios.put(`http://localhost:5555/books/${id}`,data)
+    axios.put(`https://react-start-blush.vercel.app/books/${id}`,data)
     .then(() => {
         setLoading(false);
         navigate('/');
